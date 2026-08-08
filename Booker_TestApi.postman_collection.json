@@ -1,6 +1,6 @@
 {
   "info": {
-    "_postman_id": "5dae5dd7-1d46-4a60-9da4-04831d6f0341",
+    "_postman_id": "c5f67a9e-9e19-4308-af53-062af2b50548",
     "name": "Booker_TestApi",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "9547485"
@@ -670,7 +670,10 @@
         "packages": {},
         "requests": {},
         "exec": [
-          ""
+          "pm.test(\"Verify that response is delivered within set timelimit\",function(){",
+          "    pm.expect(pm.response.responseTime).to.be.below(500);",
+          "",
+          "})"
         ]
       }
     }
