@@ -1,0 +1,25 @@
+{
+  "name": "bookerapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api-test": "newman run collections/Booker_TestApi.postman_collection.json -e environments/booker_dev.postman_environment.json -d testdata/booking_testdata.csv -r cli,junit,htmlextra --reporter-junit-export reports/Booker_Report.xml --reporter-htmlextra-export reports/Booker_Report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamqatech/PostmanPlayground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/iamqatech/PostmanPlayground/issues"
+  },
+  "homepage": "https://github.com/iamqatech/PostmanPlayground#readme",
+  "devDependencies": {
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
