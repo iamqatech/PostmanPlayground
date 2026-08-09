@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# Newman generated reports
+reports/
+*.html
+newman/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
